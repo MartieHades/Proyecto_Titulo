@@ -51,21 +51,21 @@ function getPacientes(){
 
 	$pacientes = mysql_query("SELECT * FROM pacientes");
 
-	$resultado ='<table>
+	$resultado ='<table class="table table-striped">
 				  <tr>
-				  <th><strong>ID</strong></th>
-					<th><strong>RUT</strong></th>
-					<th><strong>NOMBRES</strong></th>
-					<th><strong>APELLIDOS</strong></th>
-					<th><strong>SEXO</strong></th>
-					<th><strong>ANT. FAMILIARES</strong></th>
-					<th><strong>ANT. PERSONALES</strong></th>
-					<th><strong>TELEFONO</strong></th>
-					<th><strong>PREVISIÓN</strong></th>
-					<th><strong>DIRECCIÓN</strong></th>
-					<th><strong>CORREO</strong></th>
-					<th><strong>FECHA NACIMIENTO</strong></th>
-					<th><strong>TIPO ENFERMEDAD</strong></th>
+				  <th scope="col">ID</th>
+					<th scope="col">RUT</th>
+					<th scope="col">NOMBRES</th>
+					<th scope="col">APELLIDOS</th>
+					<th scope="col">SEXO</th>
+					<th scope="col">ANT. FAMILIARES</th>
+					<th scope="col"ANT. PERSONALES</th>
+					<th scope="col"TELEFONO</th>
+					<th scope="col"PREVISIÓN</th>
+					<th scope="col"DIRECCIÓN</th>
+					<th scope="col">CORREO</th>
+					<th scope="col">FECHA NACIMIENTO</th>
+					<th scope="col">TIPO ENFERMEDAD</th>
 					<th></th>
 					<th></th>
 				  </tr>';

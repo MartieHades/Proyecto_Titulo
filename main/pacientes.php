@@ -170,9 +170,9 @@ desired effect
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="index.html"><i class="fa fa-link"></i> <span>Inicio</span></a></li>
+        <li class="active"><a href="index.php"><i class="fa fa-link"></i> <span>Inicio</span></a></li>
         <li><a href="usuarios.php"><i class="fa fa-link"></i> <span>Usuarios</span></a></li>
-        <li><a href="pacients.php"><i class="fa fa-link"></i> <span>Pacientes</span></a></li>
+        <li><a href="pacientes.php"><i class="fa fa-link"></i> <span>Pacientes</span></a></li>
 
         <li><a href="estadisticas.php"><i class="fa fa-link"></i> <span>Estadisticas</span></a></li>
 
@@ -214,7 +214,7 @@ desired effect
         | Your Page Content Here |
         -------------------------->
 
-        <table class="table table-striped">
+        <!--<table class="table table-striped">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -243,7 +243,7 @@ desired effect
       <td>@twitter</td>
     </tr>
   </tbody>
-</table>
+</table>-->
 
 <!---->
 
@@ -251,31 +251,41 @@ desired effect
 	<?= $pacientes ?>
 
 <h2 class="principal">Ingresar paciente</h2>
-<div class="formulario">
+<div class="formulario form-group">
 	<form action="funciones/crear_usuarios.php" method="post" id="form_home">
 
-    	<label for="nombre">Nombre</label>
-        <input id="nombre" name="nombre" />
+		<label for="rut">Rut</label>
+		<input id="rut" name="rut" class="form-control"/>
 
-        <label for="apellidos">Apellidos</label>
-        <input id="apellidos" name="apellidos" />
+			<div class="row">
+				<div class="col-md-6">
+    	 		<label for="nombre">Nombre</label>
+        	<input id="nombre" name="nombre" class="form-control" />
+				</div>
+				<div class="col-md-6">
+        	<label for="apellidos">Apellidos</label>
+        	<input id="apellidos" name="apellidos" class="form-control"/>
+				</div>
+			</div>
 
-        <label for="user">Usuario</label>
-        <input id="user" name="user" />
+        <label for="user">Direccion</label>
+        <input id="user" name="user" class="form-control"/>
+
+				<label for="telefono">Teléfono</label>
+        <input id="telefono" name="telefono" class="form-control"/>
 
         <label for="pass">Contraseña</label>
-        <input id="pass" name="pass" />
+        <input id="pass" name="pass" class="form-control"/>
 
         <label for="email">Email</label>
-        <input id="email" name="email" />
+        <input id="email" name="email" class="form-control"/>
 
-        <label for="telefono">Teléfono</label>
-        <input id="telefono" name="telefono" />
+
 
         <label for="nivel">Nivel</label>
-        <input id="nivel" name="nivel" />
+        <input id="nivel" name="nivel" class="form-control"/>
 
-        <input type="submit" value="Dar de Alta" class="b_inicio"/>
+        <input type="submit" value="Dar de Alta" class="b_inicio btn btn-info"/>
 
     </form>
 </div>
