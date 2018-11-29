@@ -254,8 +254,12 @@ desired effect
 <div class="formulario form-group">
 	<form action="funciones/crear_usuarios.php" method="post" id="form_home">
 
-		<label for="rut">Rut</label>
-		<input id="rut" name="rut" class="form-control"/>
+			<div class="row">
+				<div class="col-md-6">
+					<label for="rut">Rut</label>
+					<input id="rut" name="rut" class="form-control"/>
+				</div>
+			</div>
 
 			<div class="row">
 				<div class="col-md-6">
@@ -268,23 +272,25 @@ desired effect
 				</div>
 			</div>
 
-        <label for="user">Direccion</label>
-        <input id="user" name="user" class="form-control"/>
+			<div class="row">
+				<div class="col-md-6">
+	        <label for="user">Direccion</label>
+	        <input id="user" name="user" class="form-control"/>
+				</div>
+				<div class="col-md-6">
+					<label for="telefono">Teléfono</label>
+	        <input id="telefono" name="telefono" class="form-control"/>
+				</div>
+			</div>
 
-				<label for="telefono">Teléfono</label>
-        <input id="telefono" name="telefono" class="form-control"/>
+			<div class="row">
+				<div class="col-md-6">
+	        <label for="email">Email</label>
+	        <input id="email" name="email" class="form-control"/>
+				</div>
+			</div>
 
-        <label for="pass">Contraseña</label>
-        <input id="pass" name="pass" class="form-control"/>
-
-        <label for="email">Email</label>
-        <input id="email" name="email" class="form-control"/>
-
-
-
-        <label for="nivel">Nivel</label>
-        <input id="nivel" name="nivel" class="form-control"/>
-
+				<br>
         <input type="submit" value="Dar de Alta" class="b_inicio btn btn-info"/>
 
     </form>
