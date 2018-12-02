@@ -59,10 +59,10 @@ function getPacientes(){
 					<th scope="col">APELLIDOS</th>
 					<th scope="col">SEXO</th>
 					<th scope="col">ANT. FAMILIARES</th>
-					<th scope="col"ANT. PERSONALES</th>
-					<th scope="col"TELEFONO</th>
-					<th scope="col"PREVISIÓN</th>
-					<th scope="col"DIRECCIÓN</th>
+					<th scope="col">ANT. PERSONALES</th>
+					<th scope="col">TELEFONO</th>
+					<th scope="col">PREVISIÓN</th>
+					<th scope="col">DIRECCIÓN</th>
 					<th scope="col">CORREO</th>
 					<th scope="col">FECHA NACIMIENTO</th>
 					<th scope="col">TIPO ENFERMEDAD</th>

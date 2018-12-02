@@ -254,7 +254,12 @@ desired effect
 <div class="formulario form-group">
 	<form action="funciones/crear_usuarios.php" method="post" id="form_home">
 
-			<div class="row">
+		<div class="row">
+			<div class="col-md-2">
+				<label for="user">ID</label>
+				<input id="user" name="user" class="form-control"/>
+			</div>
+
 				<div class="col-md-6">
 					<label for="rut">Rut</label>
 					<input id="rut" name="rut" class="form-control"/>
@@ -262,24 +267,47 @@ desired effect
 			</div>
 
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-4">
     	 		<label for="nombre">Nombre</label>
         	<input id="nombre" name="nombre" class="form-control" />
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-4">
         	<label for="apellidos">Apellidos</label>
         	<input id="apellidos" name="apellidos" class="form-control"/>
+				</div>
+
+				<div class="col-md-4">
+	        <label for="user">Sexo</label>
+	        <input id="user" name="user" class="form-control"/>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-md-6">
-	        <label for="user">Direccion</label>
+				<div class="col-md-4">
+	        <label for="user">Ant. Familiares</label>
 	        <input id="user" name="user" class="form-control"/>
 				</div>
-				<div class="col-md-6">
+
+					<div class="col-md-4">
+		        <label for="user">Ant. Personales</label>
+		        <input id="user" name="user" class="form-control"/>
+					</div>
+				</div>
+
+			<div class="row">
+				<div class="col-md-4">
 					<label for="telefono">Teléfono</label>
+					<input id="telefono" name="telefono" class="form-control"/>
+				</div>
+
+				<div class="col-md-4">
+					<label for="telefono">Previsión</label>
 	        <input id="telefono" name="telefono" class="form-control"/>
+				</div>
+
+				<div class="col-md-4">
+	        <label for="user">Direccion</label>
+	        <input id="user" name="user" class="form-control"/>
 				</div>
 			</div>
 
@@ -288,7 +316,13 @@ desired effect
 	        <label for="email">Email</label>
 	        <input id="email" name="email" class="form-control"/>
 				</div>
+
+			<div class="col-md-6">
+				<label for="telefono">Fecha de nacimiento</label>
+				<input id="telefono" name="telefono" class="form-control"/>
 			</div>
+		</div>
+
 
 				<br>
         <input type="submit" value="Dar de Alta" class="b_inicio btn btn-info"/>

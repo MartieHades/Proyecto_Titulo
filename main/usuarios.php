@@ -221,31 +221,49 @@ desired effect
       	<?= $usuarios ?>
 
       <h2 class="principal">Alta Usuarios</h2>
-      <div class="formulario">
+      <div class="formulario form-group">
       	<form action="funciones/crear_usuarios.php" method="post" id="form_home">
 
-          	<label for="nombre">Nombre</label>
-              <input id="nombre" name="nombre" />
+					<div class="row">
+						<div class="col-md-6">
+          		<label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" class="form-control"/>
+						</div>
 
+						<div class="col-md-6">
               <label for="apellidos">Apellidos</label>
-              <input id="apellidos" name="apellidos" />
+              <input id="apellidos" name="apellidos" class="form-control"/>
+						</div>
+					</div>
 
-              <label for="user">Usuario</label>
-              <input id="user" name="user" />
+						<div class="row">
+							<div class="col-md-6">
+              	<label for="user">Usuario</label>
+              	<input id="user" name="user" class="form-control"/>
+							</div>
 
-              <label for="pass">Contraseña</label>
-              <input id="pass" name="pass" />
+							<div class="col-md-6">
+              	<label for="pass">Contraseña</label>
+              	<input id="pass" name="pass" class="form-control"/>
+							</div>
+						</div>
 
-              <label for="email">Email</label>
-              <input id="email" name="email" />
-
-              <label for="telefono">Teléfono</label>
-              <input id="telefono" name="telefono" />
-
-              <label for="nivel">Nivel</label>
-              <input id="nivel" name="nivel" />
-
-              <input type="submit" value="Dar de Alta" class="b_inicio"/>
+						<div class="row">
+							<div class="col-md-4">
+	              <label for="email">Email</label>
+	              <input id="email" name="email" class="form-control"/>
+							</div>
+							<div class="col-md-4">
+	              <label for="telefono">Teléfono</label>
+	              <input id="telefono" name="telefono" class="form-control"/>
+							</div>
+							<div class="col-md-4">
+	              <label for="nivel">Nivel</label>
+	              <input id="nivel" name="nivel" class="form-control"/>
+							</div>
+						</div>
+<br>
+              <input type="submit" value="Dar de Alta" class="b_inicio btn btn-info"/>
 
           </form>
       </div>
